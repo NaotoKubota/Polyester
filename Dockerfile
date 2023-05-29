@@ -10,7 +10,7 @@ LABEL maintainer="Naoto Kubota <naotok@ucr.edu>"
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y less vim libcurl4-openssl-dev libssl-dev
+    apt-get install -y less vim libcurl4-openssl-dev libssl-dev libxml2-dev
 
 # install Polyester
 RUN R -e 'install.packages("BiocManager")' && \
